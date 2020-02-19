@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://localhost/clinic/Assets/bootstrap/css/bootstrap.css">
+       <link rel="stylesheet" href="http://localhost/clinic/Assets/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script type="text/javascript" src="http://localhost/clinic/Assets/bootstrap/js/jquery.min.js"></script>
+         <script type="text/javascript" src="http://localhost/clinic/Assets/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://localhost/clinic/Assets/bootstrap/js/typehead.js"></script>
+         <script type="text/javascript" src="http://localhost/clinic/Assets/bootstrap/js/webcam.min.js"></script>
+         <script type="text/javascript" src="http://localhost/clinic/Assets/bootstrap/js/counter.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#bankmode").change(function () {
+            if ($(this).val() == "bank") {
+                $("#bank").show();
+            } else {
+                $("#bank").hide();
+            }
+        });
+    });
+</script>
+  <script>
+function isNumberKey(evt){  <!--Function to accept only numeric values-->
+    //var e = evt || window.event;
+	var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode != 46 && charCode > 31 
+	&& (charCode < 48 || charCode > 57))
+        return false;
+        return true;
+	}
+		   
+    function ValidateAlpha(evt)
+    {
+        var keyCode = (evt.which) ? evt.which : evt.keyCode
+        if ((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123) && keyCode != 32)
+         
+        return false;
+            return true;
+    }
+function myform(){
+	alert("Sure ! your data is being submited successfully");
+}
+</script>
+        <link rel = "stylesheet" type = "text/css" href = "http://localhost/clinic/Assets/css/style.css">
+        <style media="print">
+
+	@page {
+			margin:0 10px;
+			/*size:8.27in 11.69in ;
+			/*height:3508 px;
+			width:2480 px;
+			/*size: auto;   auto is the initial value */
+			/*margin:0;   this affects the margin in the printer settings 
+			-webkit-print-color-adjust:exact;*/
+	}
+	@media print{
+		table {page-break-inside: avoid;}
+		#buttons{
+				display:block;
+		}
+		#invoice{
+			margin-top:20px;
+		}
+	}
+		
+</style>
+
+</script>
+        <title>Clinic Management System| Login</title>
+        
+    </head>
+    <body class="bg_color"><div class="bgh">
+<nav class="navbar">
+ <a class="navbar-brand" style="margin-left:10px; size:30px; size:40px;" href="http://localhost/clinic/"><strong>Clinic Management System</strong></a>
+      <div class="container-fluid">
+      
+        <div class="navbar-header menu">
+          <button type="button btn-danger"  class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#site-menu">
+          <span><a href="#">Menu</a></span>
+          </button>
+           </div>
+           
+        <!-- end of navbar-header-->
+        
+        <div class="collapse navbar-collapse" id="site-menu">
+          <ul class="nav navbar-nav navbar-left" style="padding-top:50px;">
+            
+           </ul>
+        </div>
+      </div>
+    </nav>
+    </div><div class="container">
+ <div class="row">
+ <div class="col-md-4">
+  </div>
+    <div class="col-md-4" id="login">
+	   <div class="panel panel-primary">
+		     <div class="panel-heading"><h4> Login</h4>	  </div>
+			     <div class="panel-body">
+	    <form method="post" class="bs-example bs-example-form" action="http://localhost/clinic/index.php/login/validate_login/">
+		<div class="input-group">
+		   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		   <input type="text" name="username" placeholder="username" class="form-control">
+         </div><!-- input group closed-->
+         <br>
+            <div class="input-group">
+		   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+		   <input type="password" name="password" placeholder="password" class="form-control">
+            </div> 
+            
+            <br>
+            <div class="input-group">
+            	<label class="checkbox-inline"><input type="checkbox" name="remember" value="1">Remember Me</label>
+            </div> <br>
+            <div class="input-group center-block">
+			   <input type="submit" name="login" class="btn  btn-primary  center-block" value="Login" style="width:100%">
+			 </div>
+	   <div id="logstatus" style="visibility:none" class="text-danger">
+	      
+	   </div>
+		
+		</form>
+		</div>
+		</div>
+	
+	 </div>
+	 
+	<div class="col md-4"></div>
+	</div><!-- row closed -->
+ </div><!-- container closed -->
+   
+    <!-- Latest compiled and minified CSS -->
+
+
+
+</body>
+</html>

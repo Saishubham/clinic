@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+.hidden{
+	display:none;
+}
+.navbg{
+	background-color:#f5f5f5fa;
+	
+	}
+ .bgh{
+	background-color:#3f9c1e;
+	
+	}
+.bg_color{
+		background-color:rgba(244,243,243,1.00);
+		    padding-right:0px !important;
+	
+	}
+    #text{
+        font-size: 20px;
+    }
+	.my-edit button{
+	margin-bottom:5px;
+	
+}
+.bgnavcolor {
+		background-color:#1CE70C !important;		
+	}
+	
+	.active{
+  background-color:rgba(222, 210, 210, 0.5);
+  color:rgba(0,0,0,1.00);
+  border-radius:20px;
+}
+.navbar-brand, .navbar-nav>li>a :hover {
+    text-shadow: 0 1px 0 rgba(255,255,255,.25);
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+  	padding: 15px 15px;
+    font-size: 28px !important;
+    line-height: 20px;
+}
+a {
+    color:#FFFFFF !important;
+    text-decoration: none;
+}
+ul li a:hover{
+	color:#000000 !important;
+	background-color:#26C314;
+	
+	}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 10px !important;
+}
+ .pagination1 > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color:#307c98;
+    border: 1px solid #ddd;
+}
+.pagination1 > li > a{  position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #307c98;
+    border: 1px solid #ddd;
+}
+
+
+
+/*--------start of counter-----------*/
+
+.counter
+{
+    background-color: #eaecf0;
+    text-align: center;
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    font-size: 18px;
+    background-color: #00b3e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
+
+
+
+/*-------------Zoom on mousehover---------------------*/
+
+.zoom {
+	padding: 2px;
+	background-color: #f1f3f1;
+	transition: transform .2s;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5);
+}
